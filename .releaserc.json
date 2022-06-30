@@ -1,0 +1,28 @@
+{
+  "branches": "main",
+  "debug": false,
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "mvn -B versions:set -DnewVersion=${nextRelease.version}",
+        "publishCmd": "mvn -B package -DskipTests && tar -zcvf app.tar.gz target/quarkus-app "
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": ["target/*-runner", "app.tar.gz"]
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["pom.xml"],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}

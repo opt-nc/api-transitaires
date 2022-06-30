@@ -1,0 +1,22 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+  name: 🧪 Test PR
+
+  on: [pull_request]
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Check out repository
+          uses: actions/checkout@v3
+        - name: Set up JDK 17
+          uses: actions/setup-java@v3
+          with:
+            java-version: 17
+            distribution: 'temurin'
+            cache: 'maven'
+        - name: Test unitaires (non natif)
+          run: mvn -B test
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
