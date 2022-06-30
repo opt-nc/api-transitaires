@@ -13,7 +13,7 @@ API qui renvoie les transitaires de dédouanement 🚢 en Nouvelle-Calédonie
 # Utilisation
 
 ```sh
-docker run --rm -it docker.io/optnc/api-transitaires:latest
+docker run --rm -it -p 8880:8080 docker.io/optnc/api-transitaires:latest
 http :8080/transitaires
 ````
 
