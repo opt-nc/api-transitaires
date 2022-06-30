@@ -57,7 +57,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/${{ github.repository }}
+          images: docker.io/${{ github.repository }}
       
       - name: 🐳 Docker build and push
         uses: docker/build-push-action@v3
