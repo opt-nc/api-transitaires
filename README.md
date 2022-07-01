@@ -6,11 +6,11 @@
 ![Docker Stars](https://img.shields.io/docker/stars/optnc/api-transitaires)
 ![Docker Image Version (latest by date)](https://img.shields.io/docker/v/optnc/api-transitaires?arch=amd64&sort=date)
 
-# api-transitaires
+# ❔ A propos
 
-API qui renvoie les transitaires de dédouanement 🚢 en Nouvelle-Calédonie
+API qui renvoie les transitaires de dédouanement 🚢 en Nouvelle-Calédonie.
 
-# Utilisation
+# 🚀 Utilisation
 
 ```sh
 docker run --rm -it -p 8880:8080 docker.io/optnc/api-transitaires:latest
@@ -18,4 +18,5 @@ http :8080/transitaires
 ````
 
 - 📖 Swagger : http://localhost:8080/q/swagger-ui
+- 💻 Front-end web : en [cours de construction](https://github.com/opt-nc/api-transitaires/issues/7)
 - ❤️‍🩹 Endpoit d'état : http://localhost:8080/q/health
