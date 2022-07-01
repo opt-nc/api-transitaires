@@ -18,3 +18,4 @@ http :8080/transitaires
 ````
 
 - 📖 Swagger : http://localhost:8080/q/swagger-ui
+- ❤️‍🩹 Endpoit d'état : http://localhost:8080/q/health
