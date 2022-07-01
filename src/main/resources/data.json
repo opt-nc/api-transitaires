@@ -1,0 +1,194 @@
+[
+  {
+    "name": "EKVF",
+    "phone": "27.25.92",
+    "email": null,
+    "website": null,
+    "facebook": null,
+    "id": "EKVF"
+  },
+  {
+    "name": "ACT - Agence Calédonienne de Transit",
+    "phone": "27.55.48",
+    "email": "sales@act.nc / h.bienfait@act.nc",
+    "website": null,
+    "facebook": null,
+    "id": "ACT_AGENCE_CALEDONIENNE_DE_TRANSIT"
+  },
+  {
+    "name": "AFL - Agence de Frêt et Logistique",
+    "phone": "26.11.11",
+    "email": null,
+    "website": "www.afl.nc",
+    "facebook": null,
+    "id": "AFL_AGENCE_DE_FRET_ET_LOGISTIQUE"
+  },
+  {
+    "name": "Agence Logistique et Transit Nouméa",
+    "phone": "24.21.85",
+    "email": "ltn@ltn.nc",
+    "website": null,
+    "facebook": null,
+    "id": "AGENCE_LOGISTIQUE_ET_TRANSIT_NOUMEA"
+  },
+  {
+    "name": "ATI TRAMAR- Groupe Léon Vincent",
+    "phone": "28.61.25",
+    "email": null,
+    "website": null,
+    "facebook": null,
+    "id": "ATI_TRAMAR_GROUPE_LEON_VINCENT"
+  },
+  {
+    "name": "ATL Lines - DEMLINES",
+    "phone": "",
+    "email": "e.fleurence@atl-lines.fr",
+    "website": "nouvellecaledonie.demlines.com",
+    "facebook": null,
+    "id": "ATL_LINES_DEMLINES"
+  },
+  {
+    "name": "BOLLORE LOGISTICS - Nouméa",
+    "phone": "28.32.43",
+    "email": "nc.commercial@bollore.com",
+    "website": null,
+    "facebook": null,
+    "id": "BOLLORE_LOGISTICS_NOUMEA"
+  },
+  {
+    "name": "Comimex",
+    "phone": "28.43.41",
+    "email": "comimex.nc@gmail.com",
+    "website": null,
+    "facebook": null,
+    "id": "COMIMEX"
+  },
+  {
+    "name": "COTRANS Calédonie Transit",
+    "phone": "27.50.52",
+    "email": "cotrans@cotrans.nc",
+    "website": null,
+    "facebook": null,
+    "id": "COTRANS_CALEDONIE_TRANSIT"
+  },
+  {
+    "name": "CTL - Consultant Tranpsort Logistique",
+    "phone": "28.69.18",
+    "email": null,
+    "website": null,
+    "facebook": null,
+    "id": "CTL_CONSULTANT_TRANPSORT_LOGISTIQUE"
+  },
+  {
+    "name": "Calédonie Transit",
+    "phone": "27.50.52",
+    "email": "cotrans@cotrans.nc",
+    "website": null,
+    "facebook": null,
+    "id": "CALEDONIE_TRANSIT"
+  },
+  {
+    "name": "DEM-pacific",
+    "phone": "26.21.85",
+    "email": "direction@dempacific.nc",
+    "website": "dempacific.nc",
+    "facebook": null,
+    "id": "DEM_PACIFIC"
+  },
+  {
+    "name": "DHL - Global forwarding",
+    "phone": "24.69.00",
+    "email": null,
+    "website": "www.dhl.com",
+    "facebook": null,
+    "id": "DHL_GLOBAL_FORWARDING"
+  },
+  {
+    "name": "Douane Agence Gondrand",
+    "phone": "27.41.18",
+    "email": "direction@gondrand.nc",
+    "website": null,
+    "facebook": null,
+    "id": "DOUANE_AGENCE_GONDRAND"
+  },
+  {
+    "name": "FedEx Express",
+    "phone": "25.36.19",
+    "email": null,
+    "website": null,
+    "facebook": null,
+    "id": "FEDEX_EXPRESS"
+  },
+  {
+    "name": "GEODIS - BROCK",
+    "phone": "26.60.70",
+    "email": null,
+    "website": "www.geodiswilson.com",
+    "facebook": "https://www.facebook.com/logistiquetransitnoumea/",
+    "id": "GEODIS_BROCK"
+  },
+  {
+    "name": "IES - Import Export Services",
+    "phone": "24.10.41",
+    "email": "ies@sifapacific.com",
+    "website": null,
+    "facebook": null,
+    "id": "IES_IMPORT_EXPORT_SERVICES"
+  },
+  {
+    "name": "LTN - Logistique et Transit Nouméa",
+    "phone": "24.21.85",
+    "email": "o.fombelle@ltn.nc",
+    "website": "www.ltn.nc",
+    "facebook": null,
+    "id": "LTN_LOGISTIQUE_ET_TRANSIT_NOUMEA"
+  },
+  {
+    "name": "Moana Services",
+    "phone": "27.38.98",
+    "email": "moana@moana.nc",
+    "website": "www.moana.nc",
+    "facebook": null,
+    "id": "MOANA_SERVICES"
+  },
+  {
+    "name": "Nouméa Transit",
+    "phone": "23.96.10",
+    "email": "neatrans@noumeatransit.nc",
+    "website": null,
+    "facebook": null,
+    "id": "NOUMEA_TRANSIT"
+  },
+  {
+    "name": "PACLOG - Pacific Logistics",
+    "phone": "28.12.10",
+    "email": "paclog@paclog.nc",
+    "website": "www.paclog.nc",
+    "facebook": null,
+    "id": "PACLOG_PACIFIC_LOGISTICS"
+  },
+  {
+    "name": "SDV-TTI",
+    "phone": "27.34.02",
+    "email": "tti-sdv@tti-sdv.com",
+    "website": "www.tti-sdv.com",
+    "facebook": null,
+    "id": "SDV_TTI"
+  },
+  {
+    "name": "SOCATRANS",
+    "phone": "27.23.32",
+    "email": "info@socatrans.nc",
+    "website": "www.socatrans.nc",
+    "facebook": null,
+    "id": "SOCATRANS"
+  },
+  {
+    "name": "TRANSAM Nouméa",
+    "phone": "27.42.92",
+    "email": "secretariat@transam.nc",
+    "website": null,
+    "facebook": null,
+    "id": "TRANSAM_NOUMEA"
+  }
+]
