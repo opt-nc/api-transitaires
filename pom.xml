@@ -4,6 +4,7 @@
   <groupId>nc.opt.postal</groupId>
   <artifactId>api-transitaires</artifactId>
   <version>0.1.0-SNAPSHOT</version>
+  <description>API qui renvoie les transitaires de dédouanement 🚢 en Nouvelle-Calédonie</description>
   <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <maven.compiler.release>17</maven.compiler.release>
