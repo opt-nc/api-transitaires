@@ -1,0 +1,155 @@
+<!DOCTYPE >
+<html lang="fr">
+  <head>
+    <title>Partenaires Mobilis de l'OPT-NC</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <!-- Mise en forme avec Tailwind CSS & Tabler-icons pour les icons & font utilisée par opt.nc -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium%20Web" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- JS-->
+    <!-- AlpineJS pour le templating -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.js"></script>
+  </head>
+  <body>
+    <div x-data="data" x-init="load()" class="flex flex-shrink flex-grow h-screen w-screen">
+      <div
+        class="z-1000 w-screen h-max-1/4 fixed md:static bottom-5 md:left flex justify-center md:justify-start md:flex-col md:h-screen md:w-96 md:bg-gray-50"
+      >
+        <div class="rounded-xl m-4 p-3 shadow bg-white md:static fixed top-0">
+          <form x-ref="form" @submit.prevent role="search" novalidate="" class="flex flex-shrink flex-grow m-0">
+            <label for="search-input" id="search-label"
+              ><svg width="20" height="20" viewBox="0 0 20 20">
+                <path
+                  d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z"
+                  stroke="currentColor"
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </label>
+            <input
+              id="search-input"
+              @input.debounce="search($event.target.value)"
+              class="flex-1 outline-none px-2"
+              aria-autocomplete="list"
+              aria-labelledby="search-label"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+              placeholder="Recherche"
+              maxlength="64"
+              type="search"
+              enterkeyhint="go"
+              autofocus
+              value=""
+            />
+            <button @click="$refs.form.reset(); search('')">
+              <svg width="20" height="20" viewBox="0 0 20 20">
+                <path
+                  d="M10 10l5.09-5.09L10 10l5.09 5.09L10 10zm0 0L4.91 4.91 10 10l-5.09 5.09L10 10z"
+                  stroke="currentColor"
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div
+          x-show="list.length"
+          class="w-full space-x-4 md:space-y-4 md:pr-4 md:pb-4 carousel carousel-center md:carousel-vertical md:bg-gray-50 md:rounded-xl"
+          @scroll.debounce="scroll($event)"
+        >
+          <template x-for="transitaire in list" :key="transitaire.id">
+            <div
+              :id="'f' + transitaire.id"
+              class="carousel-item shadow rounded-xl bg-white p-3 w-4/5 md:w-auto cursor-pointer transition delay-50 duration-300 ease-in-out"
+              :class="transitaire == selection ? 'shadow-lg border-2 border-blue-300' : ''"
+              @click="selection = transitaire "
+            >
+              <h3 class="flex justify-between mb-2 items-center text-lg leading-4 font-medium text-gray-900">
+                <span x-text="transitaire.name"></span>
+                <template x-if="transitaire.facebook">
+                  <a class="pl-2 facebook" :href="transitaire.facebook" title="Page Facebook" @click.stop></a>
+                </template>
+              </h3>
+              <template x-if="transitaire.phone">
+                <p class="text-left ml-2 max-w-2xl text-base text-gray-500">
+                  <a :href="'tel:' + transitaire.phone" @click.stop title="Appeler">
+                    <i class="ti ti-phone-call" aria-hidden="true"></i>
+                    <span x-text="transitaire.phone"></span>
+                  </a>
+                </p>
+              </template>
+              <template x-if="transitaire.email">
+                <p class="text-left ml-2 max-w-2xl text-base text-gray-500">
+                  <a :href="'mailto:' + transitaire.email" @click.stop title="Appeler">
+                    <i class="ti ti-mail" aria-hidden="true"></i>
+                    <span x-text="transitaire.email"></span>
+                  </a>
+                </p>
+              </template>
+              <template x-if="transitaire.website">
+                <p class="text-left ml-2 max-w-2xl text-base text-gray-500">
+                  <a :href="'http://' + transitaire.website" @click.stop title="Appeler">
+                    <i class="ti ti-link" aria-hidden="true"></i>
+                    <span x-text="transitaire.website"></span>
+                  </a>
+                </p>
+              </template>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="z-1000 w-full text-xs text-gray-500 text-center fixed bottom-1"
+      x-data="{buildInfo: {}}"
+      x-init="buildInfo = await (await fetch('/q/openapi', {headers:new Headers({'Accept': 'application/json'})})).json()"
+    >
+      <template x-if="buildInfo.info">
+        <div>
+          v<span x-text="buildInfo.info.version"></span> -
+          <a href="https://opt.nc">OPT.nc</a>
+        </div>
+      </template>
+    </div>
+
+    <script type="text/javascript">
+      document.addEventListener('alpine:init', () => {
+        // init AlpineJS
+        Alpine.data('data', () => ({
+          list: [],
+          selection: null,
+          q: '', // dernière recherche
+
+          search(q) {
+            this.q = q;
+            this.load();
+          },
+
+          load() {
+            const qText = this.q ? '?q=' + this.q : '';
+            fetch(`/transitaires${qText}`)
+              .then(r => r.json())
+              .then(data => (this.list = data));
+          },
+        }));
+      });
+    </script>
+  </body>
+</html>
