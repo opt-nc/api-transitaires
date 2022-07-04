@@ -7,8 +7,8 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "mvn -B clean versions:set -DnewVersion=${nextRelease.version}",
-        "publishCmd": "mvn -B package -DskipTests && mvn -B package -Pnative -DskipTests && cd target/quarkus-app && tar -zcvf app.tar.gz ."
+        "prepareCmd": "mvn -B clean versions:set -DnewVersion=${nextRelease.version} && mvn -B verify -Pnative",
+        "publishCmd": "mvn -B package -DskipTests && cd target/quarkus-app && tar -zcvf ../../app.tar.gz ."
       }
     ],
     [
