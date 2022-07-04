@@ -29,11 +29,6 @@ jobs:
           components: 'native-image'
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🧪 Integration test (native)
-        run: mvn -B verify -Pnative
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: 📦 Semantic Release
         if: github.ref == 'refs/heads/main'
         id: release
@@ -42,6 +37,12 @@ jobs:
           extra_plugins: |
             @semantic-release/exec
             @semantic-release/git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🧪 Integration test (native)
+        if: github.ref != 'refs/heads/main'
+        run: mvn -B verify -Pnative
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
