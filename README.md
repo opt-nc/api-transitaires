@@ -5,6 +5,7 @@
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/optnc/api-transitaires)
 ![Docker Stars](https://img.shields.io/docker/stars/optnc/api-transitaires)
 ![Docker Image Version (latest by date)](https://img.shields.io/docker/v/optnc/api-transitaires?arch=amd64&sort=date)
+![GitHub Repo stars](https://img.shields.io/github/stars/opt-nc/api-transitaires?style=social)
 
 # ❔ A propos
 
