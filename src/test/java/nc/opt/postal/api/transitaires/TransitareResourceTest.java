@@ -20,6 +20,8 @@ public class TransitareResourceTest {
             .then()
             .statusCode(200)
             .contentType(MediaType.APPLICATION_JSON)
-            .body("$.size()", is(24), "[0].name", is("EKVF"), "[0].phone", is("27.25.92"));
+            .body("$.size()", is(24))
+            .body("[0].name", is("EKVF"))
+            .body("[0].phone", is("27.25.92"));
     }
 }

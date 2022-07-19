@@ -48,7 +48,7 @@ public class TransitaireResource {
 
         // les différents termes de l'objet sans accent et en minuscule
         List<String> dataTerms = Arrays
-            .asList(data.name(), data.email(), data.phone(), data.website())
+            .asList(data.name(), data.email(), data.phone(), data.website(), data.ridet())
             .stream()
             .filter(Objects::nonNull)
             .map(this::normalize)

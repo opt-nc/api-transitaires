@@ -40,9 +40,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🧪 Integration test (native)
+      - name: 🧪 Integration test (native - hors release)
         if: github.ref != 'refs/heads/main'
-        run: mvn -B verify -Pnative
+        run: mvn -B verify -Pnative -DskipITs=false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

@@ -19,5 +19,5 @@ http :8080/transitaires
 ````
 
 - 📖 Swagger : http://localhost:8080/q/swagger-ui
-- 💻 Front-end web : en [cours de construction](https://github.com/opt-nc/api-transitaires/issues/7)
+- 💻 Front-end web : http://localhost:8080
 - ❤️‍🩹 Endpoit d'état : http://localhost:8080/q/health
