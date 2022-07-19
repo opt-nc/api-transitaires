@@ -74,21 +74,19 @@ body {
   scroll-snap-align: start;
 }
 
-@media (min-width: 768px) {
-  .md\:carousel-vertical {
-    overflow-x: hidden;
-    flex-direction: column;
-    -ms-overflow-style: initial;
-    scrollbar-width: initial;
-  }
-  .md\:carousel-vertical::-webkit-scrollbar {
-    width: 0.5rem;
-    background-color: #aaa; /* or add it to the track */
-    display: initial;
-  }
-  .md\:carousel-vertical::-webkit-scrollbar-thumb {
-    background: #000;
-  }
+.carousel-vertical {
+  overflow-x: hidden;
+  flex-direction: column;
+  -ms-overflow-style: initial;
+  scrollbar-width: initial;
+}
+.carousel-vertical::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #aaa; /* or add it to the track */
+  display: initial;
+}
+.carousel-vertical::-webkit-scrollbar-thumb {
+  background: #000;
 }
 
 .selected {
