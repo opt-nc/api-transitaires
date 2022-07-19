@@ -5,6 +5,7 @@
     "email": null,
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "EKVF"
   },
   {
@@ -13,6 +14,7 @@
     "email": "sales@act.nc / h.bienfait@act.nc",
     "website": null,
     "facebook": null,
+    "ridet": "0036590",
     "id": "ACT_AGENCE_CALEDONIENNE_DE_TRANSIT"
   },
   {
@@ -21,6 +23,7 @@
     "email": null,
     "website": "www.afl.nc",
     "facebook": null,
+    "ridet": null,
     "id": "AFL_AGENCE_DE_FRET_ET_LOGISTIQUE"
   },
   {
@@ -29,6 +32,7 @@
     "email": "ltn@ltn.nc",
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "AGENCE_LOGISTIQUE_ET_TRANSIT_NOUMEA"
   },
   {
@@ -37,6 +41,7 @@
     "email": null,
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "ATI_TRAMAR_GROUPE_LEON_VINCENT"
   },
   {
@@ -45,6 +50,7 @@
     "email": "e.fleurence@atl-lines.fr",
     "website": "nouvellecaledonie.demlines.com",
     "facebook": null,
+    "ridet": null,
     "id": "ATL_LINES_DEMLINES"
   },
   {
@@ -53,6 +59,7 @@
     "email": "nc.commercial@bollore.com",
     "website": null,
     "facebook": null,
+    "ridet": "0590778",
     "id": "BOLLORE_LOGISTICS_NOUMEA"
   },
   {
@@ -61,6 +68,7 @@
     "email": "comimex.nc@gmail.com",
     "website": null,
     "facebook": null,
+    "ridet": "0882944",
     "id": "COMIMEX"
   },
   {
@@ -69,6 +77,7 @@
     "email": "cotrans@cotrans.nc",
     "website": null,
     "facebook": null,
+    "ridet": "0034033",
     "id": "COTRANS_CALEDONIE_TRANSIT"
   },
   {
@@ -77,6 +86,7 @@
     "email": null,
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "CTL_CONSULTANT_TRANPSORT_LOGISTIQUE"
   },
   {
@@ -85,6 +95,7 @@
     "email": "cotrans@cotrans.nc",
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "CALEDONIE_TRANSIT"
   },
   {
@@ -93,6 +104,7 @@
     "email": "direction@dempacific.nc",
     "website": "dempacific.nc",
     "facebook": null,
+    "ridet": "0747634",
     "id": "DEM_PACIFIC"
   },
   {
@@ -101,6 +113,7 @@
     "email": null,
     "website": "www.dhl.com",
     "facebook": null,
+    "ridet": "0383588",
     "id": "DHL_GLOBAL_FORWARDING"
   },
   {
@@ -109,6 +122,7 @@
     "email": "direction@gondrand.nc",
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "DOUANE_AGENCE_GONDRAND"
   },
   {
@@ -117,6 +131,7 @@
     "email": null,
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "FEDEX_EXPRESS"
   },
   {
@@ -125,6 +140,7 @@
     "email": null,
     "website": "www.geodiswilson.com",
     "facebook": "https://www.facebook.com/logistiquetransitnoumea/",
+    "ridet": "0046706",
     "id": "GEODIS_BROCK"
   },
   {
@@ -133,6 +149,7 @@
     "email": "ies@sifapacific.com",
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "IES_IMPORT_EXPORT_SERVICES"
   },
   {
@@ -141,6 +158,7 @@
     "email": "o.fombelle@ltn.nc",
     "website": "www.ltn.nc",
     "facebook": null,
+    "ridet": "0588533",
     "id": "LTN_LOGISTIQUE_ET_TRANSIT_NOUMEA"
   },
   {
@@ -149,6 +167,7 @@
     "email": "moana@moana.nc",
     "website": "www.moana.nc",
     "facebook": null,
+    "ridet": "0610790",
     "id": "MOANA_SERVICES"
   },
   {
@@ -157,6 +176,7 @@
     "email": "neatrans@noumeatransit.nc",
     "website": null,
     "facebook": null,
+    "ridet": "0030015",
     "id": "NOUMEA_TRANSIT"
   },
   {
@@ -165,6 +185,7 @@
     "email": "paclog@paclog.nc",
     "website": "www.paclog.nc",
     "facebook": null,
+    "ridet": "0575787",
     "id": "PACLOG_PACIFIC_LOGISTICS"
   },
   {
@@ -173,6 +194,7 @@
     "email": "tti-sdv@tti-sdv.com",
     "website": "www.tti-sdv.com",
     "facebook": null,
+    "ridet": null,
     "id": "SDV_TTI"
   },
   {
@@ -181,6 +203,7 @@
     "email": "info@socatrans.nc",
     "website": "www.socatrans.nc",
     "facebook": null,
+    "ridet": null,
     "id": "SOCATRANS"
   },
   {
@@ -189,6 +212,7 @@
     "email": "secretariat@transam.nc",
     "website": null,
     "facebook": null,
+    "ridet": null,
     "id": "TRANSAM_NOUMEA"
   }
 ]
