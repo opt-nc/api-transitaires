@@ -8,7 +8,7 @@
       "@semantic-release/exec",
       {
         "prepareCmd": "mvn -B clean versions:set -DnewVersion=${nextRelease.version} && mvn -B verify -Pnative",
-        "publishCmd": "mvn -B package -DskipTests && cd target/quarkus-app && tar -zcvf ../../app.tar.gz . && cd ../ && sha256sum ../app.tar.gz target/*-runner > checksums.txt"
+        "publishCmd": "mvn -B package -DskipTests && cd target/quarkus-app && tar -zcvf ../../app.tar.gz . && cd ../ && sha256sum ../app.tar.gz *-runner > ../checksums.txt"
       }
     ],
     [
