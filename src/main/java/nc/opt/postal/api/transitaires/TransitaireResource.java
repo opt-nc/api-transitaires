@@ -14,7 +14,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import nc.opt.postal.api.transitaires.Transitare.Scored;
+import nc.opt.postal.api.transitaires.Transitaire.Scored;
 
 @Path("/transitaires")
 public class TransitaireResource {
@@ -24,8 +24,8 @@ public class TransitaireResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Transitare> list(@QueryParam("q") String q) {
-        List<Transitare> data = Arrays.asList(jsonb.fromJson(getClass().getResourceAsStream("/data.json"), Transitare[].class));
+    public List<Transitaire> list(@QueryParam("q") String q) {
+        List<Transitaire> data = Arrays.asList(jsonb.fromJson(getClass().getResourceAsStream("/data.json"), Transitaire[].class));
         if (q == null || q.isEmpty()) {
             return data;
         } else {
@@ -42,7 +42,7 @@ public class TransitaireResource {
     /**
      * Indique si au moins un champ contient un des mots, plus il y a de mots qui mathent plus le score est élevé
      */
-    private long score(Transitare data, String q) {
+    private long score(Transitaire data, String q) {
         // le critère de recherche mot par mot sans accent, sans espace et en minuscule
         List<String> queryWords = Arrays.asList(normalize(q).toLowerCase().split("\\W+"));
 
